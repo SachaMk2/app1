@@ -1,31 +1,31 @@
-
+#Vérifie si la liste est vide.
 def est_vide(P):
     return P == []
-
+#Ajoute un élément e au sommet de la pile.
 def empiler(P, e):
     P.append(e)
     return P
-
+#Retire l'élément au sommet.
 def depiler(P):
     if not est_vide(P):
         P.pop()
     return P
-
+#Regarde l'élément au sommet sans le retirer.
 def sommet(P):
     if est_vide(P):
         return None
     return P[-1]
-
+#Ajoute un élément à la fin de la file.
 def enfiler(F, e):
     F.append(e)
     return F
-
+#Retire et renvoie le premier élément de la file.
 def defiler(F):
     if not est_vide(F):
         return F.pop(0)
     return None
 
-
+#Cette fonction parcourt la chaîne de caractères (le code HTML) pour en extraire uniquement les noms des balises.
 def analyser_html(html_brut):
     file_balises = []
     i = 0
@@ -46,7 +46,7 @@ def analyser_html(html_brut):
     return file_balises
 
 # --- 3. RAPPORT D'ERREURS (Étapes 2 & 3 de la mission) ---
-
+#Elle utilise une pile de contrôle pour vérifier la symétrie du document.
 def verifier_structure(file_balises):
     pile_controle = []
     rapport_erreurs = []
