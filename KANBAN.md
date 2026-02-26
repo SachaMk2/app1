@@ -7,7 +7,7 @@
 
 ## En cours  
 - [ ] Continuer le fichier
-- [ ] Créer lecture du fichier HTML 
 
 ## Fait  
 - [x] Implémenter pile et file 
+- [x] Créer lecture du fichier HTML 
