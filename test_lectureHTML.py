@@ -3,5 +3,10 @@ def lecture(fichier_HTML):
         text = f.read()
     return text 
 
-c = lecture("document_bf_1.html")
-print(c)
+nom_fichier = input("Entrez le nom du fichier HTML: ")
+
+if os.path.exists(nom_ficher): 
+    c = lecture(nom_fichier)
+    print(c) 
+else: 
+    print("Désoler le fichier n'existe pas") 
