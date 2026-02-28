@@ -91,11 +91,9 @@ if __name__ == "__main__":
     nom_fichier = input("Entrez le nom du fichier HTML: ")
 
     if os.path.exists(nom_fichier): 
-        # On lit le contenu du fichier
         c = lecture(nom_fichier)
         print("Analyse du code en cours...")
         
-        # On passe le contenu lu à tes fonctions d'analyse
         file_a_traiter = analyser_html(c)
         erreurs = verifier_structure(file_a_traiter)
         
