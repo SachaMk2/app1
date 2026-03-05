@@ -2,15 +2,16 @@
 
 ## Membres du groupe 
   | Augustin | Test Barreur et Testeur |
-  | Sacha | Porte-parole et architecte |
+  | Sacha | architecte et porte parole |
   | Gaspard | Circulateur de parole et gardien du temps |
-  | Malo | Scribe et secrétaire |
+  | Malo | secretaire et scribe |
   | Noam | Activateur, faiseur de point |
 
 ## Description 
-Le programme prend un fichier HTML, le lit puis fourni un rapport avec les positions des erreurs et les erreurs
+Le programme prend un fichier HTML, le lit puis fourni un rapport avec les positions des erreurs.
 
 ## Installation / Utilisation 
 
 ## Structure du projet 
+
 
