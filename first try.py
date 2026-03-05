@@ -1,11 +1,11 @@
 #Vérifie si la liste est vide.
 def est_vide(P):
     return P == []
-#Ajoute un élément e au sommet de la pile.
+#Ajoute un élément au nibeau du sommet de la pile.
 def empiler(P, e):
     P.append(e)
     return P
-#Retire l'élément au sommet.
+#Retire l'élément qui es au sommet.
 def depiler(P):
     if not est_vide(P):
         P.pop()
@@ -44,6 +44,7 @@ def analyser_html(html_brut):
                 i = fin
         i += 1
     return file_balises
+    #tres bonne ligne de code, ca vaut le coup de rester debout jusqu'a minuit 
 
 # --- 3. RAPPORT D'ERREURS (Étapes 2 & 3 de la mission) ---
 #Elle utilise une pile de contrôle pour vérifier la symétrie du document.
@@ -70,7 +71,7 @@ def verifier_structure(file_balises):
                 rapport_erreurs.append(f"Erreur : Trouvé </{nom_pur}>, mais attendait </{sommet(pile_controle)}>.")
                 depiler(pile_controle)
 
-    # Vérification des balises jamais fermées
+    # Vérifications des balises jamais fermées
     while not est_vide(pile_controle):
         rapport_erreurs.append(f"Erreur : Balise <{sommet(pile_controle)}> non fermée en fin de document.")
         depiler(pile_controle)
